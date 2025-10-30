@@ -7,7 +7,7 @@ function App() {
   useEffect(() => {
     const timer = setTimeout(() => {
       setIsLoading(false);
-    }, 4000); // duración total del preloader
+    }, 4000);
     return () => clearTimeout(timer);
   }, []);
 
@@ -43,7 +43,7 @@ function App() {
           </svg>
         </div>
       ) : (
-        <div className="contenido">
+        <div>
           <h1>home</h1>
         </div>
       )}

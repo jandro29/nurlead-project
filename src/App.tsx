@@ -1,35 +1,54 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import { useEffect, useState } from "react";
+import "./App.css";
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 4000); // duración total del preloader
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.tsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
+      {isLoading ? (
+        <div className="preloader">
+          <svg
+            className="logo"
+            viewBox="0 0 600 150"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <defs>
+              <linearGradient id="gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" stopColor="#813368" />
+                <stop offset="50%" stopColor="#813368" />
+                <stop offset="100%" stopColor="#E8B9E0" />
+              </linearGradient>
+            </defs>
+            <text
+              x="50%"
+              y="50%"
+              textAnchor="middle"
+              fill="none"
+              stroke="url(#gradient)"
+              strokeWidth="2"
+              strokeDasharray="900"
+              strokeDashoffset="900"
+              className="text"
+            >
+              Nurlead
+            </text>
+          </svg>
+        </div>
+      ) : (
+        <div className="contenido">
+          <h1>home</h1>
+        </div>
+      )}
     </>
-  )
+  );
 }
 
-export default App
+export default App;

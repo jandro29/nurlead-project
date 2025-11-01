@@ -1,5 +1,7 @@
-import { useEffect, useState } from "react";
+//App.tsx
+import { Fragment, useEffect, useState } from "react";
 import "./App.css";
+import Home from "./pages/Home";
 
 function App() {
   const [isLoading, setIsLoading] = useState(true);
@@ -43,9 +45,7 @@ function App() {
           </svg>
         </div>
       ) : (
-        <div>
-          <h1>home</h1>
-        </div>
+        <Home />
       )}
     </>
   );

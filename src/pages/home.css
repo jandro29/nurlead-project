@@ -1,3 +1,7 @@
+html{
+  scroll-behavior: smooth;
+}
+
 /*home.css*/
 .container {
   width: min(1100px, 92%);
@@ -19,12 +23,12 @@
 
 /* --- Header --- */
 .site-header {
-  position: sticky;
+ background-color: transparent;
+  position: absolute;
   top: 0;
-  backdrop-filter: saturate(140%) blur(10px);
-  background: rgba(10,10,10,.6);
-  border-bottom: 1px solid #2a2a2a;
-  z-index: 50;
+  left: 0;
+  width: 100%;
+  z-index: 999999;
 }
 .site-header .container {
   display: flex; align-items: center; justify-content: space-between;

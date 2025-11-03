@@ -1,7 +1,7 @@
 /*Header.tsx*/
 export default function Header() {
   return (
-    <header className="site-header">
+    <header className="site-header w-[100%]">
       <div className="container">
         <div className="brand">
           <span className="brand-mark">N</span>

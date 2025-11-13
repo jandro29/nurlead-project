@@ -1,6 +1,5 @@
 //App.tsx
 import { useEffect, useState } from "react";
-import "./styles/App.css";
 import Home from "./pages/Home";
 
 function App() {
@@ -16,9 +15,9 @@ function App() {
   return (
     <>
       {isLoading ? (
-        <div className="preloader">
+        <div className="fixed inset-0 bg-black flex justify-center items-center z-9999">
           <svg
-            className="logo"
+            className="w-[70%] max-w-[600px] h-auto"
             viewBox="0 0 600 150"
             xmlns="http://www.w3.org/2000/svg"
           >
@@ -38,7 +37,7 @@ function App() {
               strokeWidth="2"
               strokeDasharray="900"
               strokeDashoffset="900"
-              className="text"
+              className="text-[80px] font-extrabold animate-draw animate-fill"
             >
               Nurlead
             </text>

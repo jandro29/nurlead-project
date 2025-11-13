@@ -1,5 +1,5 @@
 //App.tsx
-import { Fragment, useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import "./styles/App.css";
 import Home from "./pages/Home";
 

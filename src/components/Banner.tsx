@@ -180,7 +180,7 @@ const Banner = () => {
               }}
             >
               <span
-                className="text-sm font-semibold text-transparent bg-clip-text bg-gradient-to-r"
+                className="text-sm font-semibold text-transparent bg-clip-text bg-linear-to-r"
                 style={{
                   backgroundImage: "linear-gradient(to right, #E8B9E0, #813368)",
                 }}

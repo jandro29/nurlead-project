@@ -3,7 +3,7 @@ import Header from "../components/Header";
 import Banner from "../components/Banner"
 import Caracteristicas from "../components/Caracteristicas";
 import Footer from "../components/Footer";
-import "./home.css";
+import "../styles/home.css";
 
 
 export default function Home() {

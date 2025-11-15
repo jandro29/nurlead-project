@@ -1,9 +1,9 @@
 "use client"
 
 import { useRef, useState, useEffect } from "react"
-import AnimatedBackground from "./AnimatedBackground"
-import CustomCursor from "./CustomCursor"
-import BannerContent from "./BannerContent"
+import AnimatedBackground from "@/components/AnimatedBackground"
+import CustomCursor from "@/components/CustomCursor"
+import BannerContent from "@/components/BannerContent"
 
 interface MousePosition {
   x: number

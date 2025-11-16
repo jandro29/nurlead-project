@@ -20,28 +20,3 @@ body{
 html{
   scroll-behavior: smooth;
 }
-
-@keyframes draw-stroke {
-  from { stroke-dashoffset: 900; }
-  to { stroke-dashoffset: 0; }
-}
-
-@keyframes fill-text {
-  0% {
-    fill: none;
-    stroke-width: 2;
-  }
-  100% {
-    fill: url(#gradient);
-    stroke-width: 0;
-  }
-}
-
-.animate-draw {
-  animation: draw-stroke 2.8s ease-out forwards;
-}
-
-.animate-fill {
-  animation: fill-text 0.9s ease forwards;
-  animation-delay: 0.8s;
-}

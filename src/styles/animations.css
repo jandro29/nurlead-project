@@ -1,0 +1,8 @@
+.animate-draw {
+  animation: draw-stroke 2.8s ease-out forwards;
+}
+
+.animate-fill {
+  animation: fill-text 0.9s ease forwards;
+  animation-delay: 0.8s;
+}

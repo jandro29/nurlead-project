@@ -1,15 +1,15 @@
-import Header from "@/components/layout/Header";
-import Banner from "@/components/layout/Banner"
-import Footer from "@/components/layout/Footer";
-import Categories from "@/components/home/Categories";
-import Advantages from "@/components/home/Advantages";
-import Stats from "@/components/home/Stats";
-import PopularClasses from "@/components/home/PopularClasses";
-import Community from "@/components/home/Community";
-import Teachers from "@/components/home/Teachers";
-import Testimonials from "@/components/home/Testimonials";
-import Teams from "@/components/home/Teams";
-import FAQ from "@/components/home/FAQ";
+import Header from "@/components/Header";
+import Banner from "@/components/Banner"
+import Footer from "@/components/Footer";
+import Categories from "@/components/Categories";
+import Advantages from "@/components/Advantages";
+import Stats from "@/components/Stats";
+import PopularClasses from "@/components/PopularClasses";
+import Community from "@/components/Community";
+import Teachers from "@/components/Teachers";
+import Testimonials from "@/components/Testimonials";
+import Teams from "@/components/Teams";
+import FAQ from "@/components/FAQ";
 import { Fragment } from "react/jsx-runtime";
 
 

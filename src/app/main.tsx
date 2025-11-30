@@ -1,14 +1,13 @@
-//main.tsx
 import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
-import '@/styles/index.css'
-import '@/styles/animations.css'
-import '@/styles/keyframes.css'
-import App from './App.tsx'
-
+import '@/assets/styles/index.css'
+import '@/assets/styles/animations.css'
+import '@/assets/styles/keyframes.css'
+import App from './App'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <App />
   </StrictMode>,
 )
+
